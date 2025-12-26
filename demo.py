@@ -8,12 +8,10 @@ for i in range(1, row+1):
         print("⭐", end=" ")
     print()
 
-i = 1
-while i < 11:
-    print(i)
-    i += 1
+nat = sum(range(1, 11))
+print(f"The sum of the first 10 natural numbers is {nat}")
 
-num = int(input("Enter a random number = "))
+num = int(input("Enter a random number "))
 
 if num <= 1:
     print("It is not a prime number")
