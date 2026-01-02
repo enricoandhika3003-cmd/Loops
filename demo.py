@@ -22,3 +22,21 @@ else:
             break
     else:
         print("It is a prime number")
+
+n = int(input("Enter another random number: "))
+sum = 0
+temp = n
+
+digits = len(str(n))
+
+while temp > 0:
+    digits = temp % 10
+    sum += digits ** digits
+    temp //= 10
+
+if n < 0:
+    print("Please enter a positive number")
+elif sum == n:
+    print(n, "is an Armstrong number")
+else:
+    print(n, "is not an Armstrong number")
